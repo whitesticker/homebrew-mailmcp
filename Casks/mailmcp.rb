@@ -1,6 +1,6 @@
 cask "mailmcp" do
-  version "1.1.0"
-  sha256 "cdad0f1d84346c62c3790b78508f60123e2e3293cb9aee077f0c84f6f7385cb5"
+  version "1.2.0"
+  sha256 "5e6d3d6c8d16b8a23fbb8a8634a7260c6bb2cb81ea4a50cc4c397e4ef2c61330"
 
   url "https://github.com/whitesticker/mailmcp/releases/download/v#{version}/MailMCP-#{version}.zip"
   name "MailMCP"
@@ -20,6 +20,6 @@ cask "mailmcp" do
   caveats <<~EOS
     MailMCP is ad-hoc signed. If macOS blocks the first launch:
       xattr -dr com.apple.quarantine #{appdir}/MailMCP.app
-    Then open MailMCP, unlock the vault, and use Add to an agent.
+    Keep MailMCP open (or in the menu bar) while agents run.
   EOS
 end

@@ -1,6 +1,6 @@
 cask "mailmcp" do
-  version "1.3.0"
-  sha256 "f21ccff201aa05b4d280015f86fb4833670d0837b6bb90b6562fde3d4cb6b6da"
+  version "1.4.0"
+  sha256 "d29314f37dd6fb3b067e8055e49670487ec960d6621faa9a6da77b68d6e69e05"
 
   url "https://github.com/whitesticker/mailmcp/releases/download/v#{version}/MailMCP-#{version}.zip"
   name "MailMCP"
@@ -12,7 +12,7 @@ cask "mailmcp" do
     strategy :github_latest
   end
 
-  depends_on macos: :sonoma
+  depends_on macos: :sequoia
 
   app "MailMCP.app"
   binary "#{appdir}/MailMCP.app/Contents/MacOS/mailmcp-mcp"

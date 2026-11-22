@@ -1,6 +1,6 @@
 cask "mailmcp" do
-  version "1.5.0"
-  sha256 "d6824d6a130bd11658c9db91bf92990ef18c95913be2989e3ad5279387aa2a6c"
+  version "1.6.0"
+  sha256 "4b08a2021ed51f38ffcafa20b4cb65258566ac55c71a27dd4bf121da1709b28c"
 
   url "https://github.com/whitesticker/mailmcp/releases/download/v#{version}/MailMCP-#{version}.zip"
   name "MailMCP"
